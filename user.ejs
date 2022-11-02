@@ -1,0 +1,14 @@
+let UserSchema = mongoose.Schema({
+    GameName: String,
+    review: String
+})
+
+module.exports = mongoose.model('user', UserSchema)
+
+mongoose.connect('mongodb://localhost/GamingForum')
+.then(function(){
+    console.log('Database Connected...')
+})
+.catch(function(err){
+    console.log(e)
+})
